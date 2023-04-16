@@ -12,7 +12,7 @@ async function getData(nomor:Text){
 export default async function Surat({params}:any) {
     const {data} = await getData(params.nomor);
     const listAyat = data.ayat.map((x:any)=>
-        <li>
+        <li key={x.nomorAyat}>
         <div className="bacaan">
             <div className="teks-arab">
                 {x.teksArab} {arrNumb(x.nomorAyat)}

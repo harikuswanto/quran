@@ -16,7 +16,7 @@ export default function RootLayout({
       <body>
         <div className="header-container">
           <header>
-            <div className="logo"> <Link href="/">My Qur'an</Link></div>
+            <div className="logo"> <Link href="/">My Quran</Link></div>
             <nav>
               <ul className='flex'>
                 <li><Link href="/">Home</Link></li>
