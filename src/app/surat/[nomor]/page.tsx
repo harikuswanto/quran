@@ -23,5 +23,5 @@ export default async function Surat({params}:any) {
         </div>
         </li>
     );
-    return <ul className="daftar-surat">{listAyat}</ul> ;
+    return <ul className="daftar-surat">{listAyat}</ul>;
 }
