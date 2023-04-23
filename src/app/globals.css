@@ -1,9 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url(//db.onlinewebfonts.com/c/a565b17e58e287300f1cd79645ae1770?family=KFGQPC+HAFS+Uthmanic+Script);
-@font-face {font-family: "KFGQPC HAFS Uthmanic Script"; src: url("//db.onlinewebfonts.com/t/a565b17e58e287300f1cd79645ae1770.eot"); src: url("//db.onlinewebfonts.com/t/a565b17e58e287300f1cd79645ae1770.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a565b17e58e287300f1cd79645ae1770.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a565b17e58e287300f1cd79645ae1770.woff") format("woff"), url("//db.onlinewebfonts.com/t/a565b17e58e287300f1cd79645ae1770.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a565b17e58e287300f1cd79645ae1770.svg#KFGQPC HAFS Uthmanic Script") format("svg"); }
-
+@font-face {font-family: "KFGQPC HAFS Uthmanic Script";
+    src: url("http://db.onlinewebfonts.com/t/a565b17e58e287300f1cd79645ae1770.eot"); /* IE9*/
+    src: url("http://db.onlinewebfonts.com/t/a565b17e58e287300f1cd79645ae1770.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("http://db.onlinewebfonts.com/t/a565b17e58e287300f1cd79645ae1770.woff2") format("woff2"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/a565b17e58e287300f1cd79645ae1770.woff") format("woff"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/a565b17e58e287300f1cd79645ae1770.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("http://db.onlinewebfonts.com/t/a565b17e58e287300f1cd79645ae1770.svg#KFGQPC HAFS Uthmanic Script") format("svg"); /* iOS 4.1- */
+}
 
 .header-container{
     @apply shadow mb-16 sticky top-0;
@@ -68,8 +73,8 @@ nav > ul > li > a:hover{
     @apply font-hafs text-right bg-primary/5 w-full text-2xl rounded-t-md p-4;
 }
 .teks-latin{
-    @apply w-full px-4 pt-4 text-justify;
+    @apply w-full px-4 pt-4 text-justify text-xl;
 }
 .teks-terjemahan{
-    @apply w-full px-4 pb-4 text-justify;
+    @apply w-full px-4 pb-4 text-justify italic;
 }
